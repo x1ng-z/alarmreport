@@ -75,7 +75,7 @@ public class MeasurePoint {
     private float current_Change_Rate;//数据变化率
     private Date current_time;//当前时间
     private double current_score_final;//测点最终评分
-
+    public MeasurePoint(){}
     public MeasurePoint( String fix_devicename,//0主机设备（DEV_NAME）
                   String fix_deviceNo,//1主机设备编号（DEV_NO ）
                   String fix_union_tagname,//3位号说明编号（ DEV_TAG_NO）

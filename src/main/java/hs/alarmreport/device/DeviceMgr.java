@@ -5,6 +5,8 @@ import com.alibaba.fastjson.JSONObject;
 import hs.alarmreport.opc.DirectOpcServe;
 import hs.alarmreport.opc.OPCService;
 import hs.alarmreport.resourceparse.Base4Xml;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -16,6 +18,7 @@ import java.util.regex.Pattern;
 
 @Component
 public class DeviceMgr {
+    private Logger logger = LoggerFactory.getLogger(DeviceMgr.class);
     private static DeviceMgr deviceMgr=null;
 
     private List<ProductionLine> productionLines;
@@ -35,6 +38,7 @@ public class DeviceMgr {
 
     @Autowired
     public DeviceMgr(Base4Xml base4Xml,DirectOpcServe opcService){
+        logger.info("init DeviceMgr");
         this.opcService=opcService;
         productionLines=base4Xml.getPCollects();
         for(ProductionLine productionLine:productionLines){
