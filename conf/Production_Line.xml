@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Alarm_PreValue_Sets>
+  <Production_Line PRL_ID="10012016101910000001" PRL_NAME="桐庐红狮一线">
+<!--    <Deice DEV_NAME="破碎机" DEV_NO ="ACR1">-->
+<!--      <Point ALM_LEV="3.0" CHA_RATE="111111.0" DEV_PRO="生料" DEV_TAG="YTE09_YTE09" DEV_TAGCH="破碎机轴承温度" DEV_TAG_NO="ACR100_ZCWD01" DE_TE_EL="设备&amp;" HEA_VALUE="70.0" HHI_LIM="75.0" HIGH_LIM="70.0" IS_AUDIO="false" IS_MAIN="true" IS_PUSH="false" IS_SCORE="true" LLO_LIM="0.0" LOW_LIM="0.0"/>-->
+<!--      <Point ALM_LEV="3.0" CHA_RATE="111111.0" DEV_PRO="生料" DEV_TAG="Y5M_PWRD_PV" DEV_TAGCH="主电机电流" DEV_TAG_NO="ACR100MT01_DJDL01" DE_TE_EL="电气&amp;设备&amp;" HEA_VALUE="99999.0" HHI_LIM="111111.0" HIGH_LIM="99999.0" IS_AUDIO="false" IS_MAIN="true" IS_PUSH="false" IS_SCORE="true" LLO_LIM="0.0" LOW_LIM="0.0"/>-->
+<!--      <Point ALM_LEV="3.0" CHA_RATE="111111.0" DEV_PRO="生料" DEV_TAG="YTE03_DACA_PV" DEV_TAGCH="电机绕组温度" DEV_TAG_NO="ACR100MT01_RZWD01" DE_TE_EL="设备&amp;" HEA_VALUE="85.0" HHI_LIM="100.0" HIGH_LIM="85.0" IS_AUDIO="false" IS_MAIN="true" IS_PUSH="false" IS_SCORE="true" LLO_LIM="0.0" LOW_LIM="0.0"/>-->
+<!--      <Point ALM_LEV="3.0" CHA_RATE="111111.0" DEV_PRO="生料" DEV_TAG="YTE01_DACA_PV" DEV_TAGCH="电机轴承温度1" DEV_TAG_NO="ACR100MT01_ZCWD01" DE_TE_EL="设备&amp;" HEA_VALUE="65.0" HHI_LIM="70.0" HIGH_LIM="65.0" IS_AUDIO="false" IS_MAIN="true" IS_PUSH="false" IS_SCORE="true" LLO_LIM="0.0" LOW_LIM="0.0"/>-->
+<!--      <Point ALM_LEV="3.0" CHA_RATE="111111.0" DEV_PRO="生料" DEV_TAG="YTE02_DACA_PV" DEV_TAGCH="电机轴承温度2" DEV_TAG_NO="ACR100MT01_ZCWD02" DE_TE_EL="设备&amp;" HEA_VALUE="65.0" HHI_LIM="70.0" HIGH_LIM="65.0" IS_AUDIO="false" IS_MAIN="true" IS_PUSH="false" IS_SCORE="true" LLO_LIM="0.0" LOW_LIM="0.0"/>-->
+<!--    </Deice>-->
+    <Deice DEV_NAME="生料磨" DEV_NO ="BRP1">
+      <Point ALM_LEV="3.0" CHA_RATE="111111.0" DEV_PRO="生料" DEV_TAG="dcs.User.ff1" DEV_TAGCH="磨主机电流" DEV_TAG_NO="BRP101_ZJDL01" DE_TE_EL="设备&amp;" HEA_VALUE="65.0" HHI_LIM="210.0" HIGH_LIM="200.0" IS_AUDIO="true" IS_MAIN="true" IS_PUSH="false" IS_SCORE="true" LLO_LIM="100.0" LOW_LIM="150.0"/>
+	  <Point ALM_LEV="3.0" CHA_RATE="111111.0" DEV_PRO="生料" DEV_TAG="dcs.User.ff2" DEV_TAGCH="选粉机上部轴承温度" DEV_TAG_NO="BRP101_ALM01" DE_TE_EL="设备&amp;" HEA_VALUE="60.0" HHI_LIM="70.0" HIGH_LIM="60.0" IS_AUDIO="true" IS_MAIN="true" IS_PUSH="false" IS_SCORE="true" LLO_LIM="0.0" LOW_LIM="0.0"/>
+	  <Point ALM_LEV="3.0" CHA_RATE="111111.0" DEV_PRO="生料" DEV_TAG="dcs.User.ff3" DEV_TAGCH="选粉机中部轴承温度" DEV_TAG_NO="BRP101_ALM02" DE_TE_EL="设备&amp;" HEA_VALUE="60.0" HHI_LIM="70.0" HIGH_LIM="60.0" IS_AUDIO="true" IS_MAIN="true" IS_PUSH="false" IS_SCORE="true" LLO_LIM="0.0" LOW_LIM="0.0"/>
+
+    </Deice>
+
+  </Production_Line>
+</Alarm_PreValue_Sets>
