@@ -113,6 +113,15 @@
         </dependency>
 
 
+        <dependency>
+            <groupId>hs</groupId>
+            <artifactId>opc</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/OPC.jar</systemPath>
+        </dependency>
+
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

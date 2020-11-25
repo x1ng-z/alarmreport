@@ -2,7 +2,6 @@ package hs.alarmreport.opc;
 
 import hs.alarmreport.device.MeasurePoint;
 import org.jinterop.dcom.common.JIException;
-import org.jinterop.dcom.core.JIVariant;
 import org.openscada.opc.lib.common.AlreadyConnectedException;
 import org.openscada.opc.lib.common.ConnectionInformation;
 import org.openscada.opc.lib.common.NotConnectedException;
@@ -11,14 +10,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import java.net.UnknownHostException;
-import java.time.Instant;
-import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.Pattern;
@@ -30,7 +25,7 @@ import java.util.regex.Pattern;
  */
 
 //@Component
-public class OPCService implements Runnable, Service {
+public class OPCService implements Runnable,Service {
     private Logger logger = LoggerFactory.getLogger(OPCService.class);
     private static final boolean DEBUG = false;
     private static Pattern pvenablepattern = Pattern.compile("(^pvenable\\d+$)");

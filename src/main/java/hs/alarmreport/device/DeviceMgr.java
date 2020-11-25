@@ -2,8 +2,7 @@ package hs.alarmreport.device;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import hs.alarmreport.opc.DirectOpcServe;
-import hs.alarmreport.opc.OPCService;
+import hs.alarmreport.opc.OpcConnect;
 import hs.alarmreport.resourceparse.Base4Xml;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,11 +23,11 @@ public class DeviceMgr {
     private List<ProductionLine> productionLines;
 
 
-    public void setOpcService(DirectOpcServe opcService) {
+    public void setOpcService(OpcConnect opcService) {
         this.opcService = opcService;
     }
 
-    private DirectOpcServe opcService;
+    private OpcConnect opcService;
 
 
 // for real data flush simple
@@ -37,7 +36,7 @@ public class DeviceMgr {
 
 
     @Autowired
-    public DeviceMgr(Base4Xml base4Xml,DirectOpcServe opcService){
+    public DeviceMgr(Base4Xml base4Xml,OpcConnect opcService){
         logger.info("init DeviceMgr");
         this.opcService=opcService;
         productionLines=base4Xml.getPCollects();

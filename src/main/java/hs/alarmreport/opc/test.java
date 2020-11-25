@@ -2,10 +2,10 @@ package hs.alarmreport.opc;
 
 import com.sun.jna.Memory;
 import com.sun.jna.Pointer;
+import opc.serve.OTT;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 public class test {

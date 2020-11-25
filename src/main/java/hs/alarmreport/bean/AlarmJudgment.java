@@ -114,7 +114,7 @@ public class AlarmJudgment {
 //                 * HH  Alarm
 //                 * */
 //            }else
-            if (sub(current_value, fix_hhi_lim) > 0.00001) {
+            if (sub(current_value, fix_hhi_lim) >0) {
                 if (measurePoint.getCurrentAlarmType() != MeasurePoint.ALARTTYPE_HHignAlarm) {
                     measurePoint.setCurrentAlarmType(MeasurePoint.ALARTTYPE_HHignAlarm);
                     AlarmMessage alarmMessage = new AlarmMessage();
@@ -158,7 +158,7 @@ public class AlarmJudgment {
                  * H  Alarm
                  * */
             } else {
-                if ((sub(current_value, fix_hign_lim) > 0.001) && (sub(current_value, fix_hhi_lim) < -0.001)) {
+                if ((sub(current_value, fix_hign_lim) > 0) && (sub(current_value, fix_hhi_lim) < 0)) {
 
                     if (measurePoint.getCurrentAlarmType() != MeasurePoint.ALARTTYPE_HighAlarm) {
                         measurePoint.setCurrentAlarmType(MeasurePoint.ALARTTYPE_HighAlarm);
@@ -201,7 +201,7 @@ public class AlarmJudgment {
                  * */
                 else {
 
-                    if (sub(current_value, fix_llo_lim) < -0.001) {
+                    if (sub(current_value, fix_llo_lim) < 0) {
                         if (measurePoint.getCurrentAlarmType() != MeasurePoint.ALARTTYPE_LowlowAlarm) {
                             measurePoint.setCurrentAlarmType(MeasurePoint.ALARTTYPE_LowlowAlarm);
                             AlarmMessage alarmMessage = new AlarmMessage();
@@ -244,7 +244,7 @@ public class AlarmJudgment {
                      * */
                     else {
 
-                        if ((sub(current_value, fix_low_lim) < -0.001) && (sub(current_value, fix_llo_lim) > 0.001)) {
+                        if ((sub(current_value, fix_low_lim) < 0) && (sub(current_value, fix_llo_lim) > 0)) {
                             if (measurePoint.getCurrentAlarmType() != MeasurePoint.ALARTTYPE_LowAlarm) {
                                 measurePoint.setCurrentAlarmType(MeasurePoint.ALARTTYPE_LowAlarm);
                                 AlarmMessage alarmMessage = new AlarmMessage();
